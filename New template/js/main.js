@@ -7,11 +7,18 @@ menu.onclick = () => {
 	bell.classList.remove('active');
 };
 
+
 // Notifications
 let bell = document.querySelector('.notification');
 
 document.querySelector('#bell-icon').onclick = () => {
 	bell.classList.toggle('active');
+};
+// cart items added
+let cart = document.querySelector('.menu');
+
+document.querySelector('#cart-icon').onclick = () =>{
+	cart.classList.toggle('active');
 };
 
 // Swiper
