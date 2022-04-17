@@ -4,6 +4,7 @@ let navbar = document.querySelector('.menu');
 menu.onclick = () => {
 	navbar.classList.toggle('active');
 	menu.classList.toggle('move');
+	location.href = "cart.html";
 	bell.classList.remove('active');
 };
 
