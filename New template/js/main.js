@@ -4,7 +4,12 @@ let navbar = document.querySelector('.menu');
 menu.onclick = () => {
 	navbar.classList.toggle('active');
 	menu.classList.toggle('move');
+<<<<<<< HEAD
 	cart.classList.remove('active');
+=======
+	location.href = "cart.html";
+	bell.classList.remove('active');
+>>>>>>> 04335cd257a2b019bc3fe66d2458a41243b81091
 };
 
 // Notifications
