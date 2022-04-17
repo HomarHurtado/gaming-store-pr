@@ -4,22 +4,22 @@ let navbar = document.querySelector('.menu');
 menu.onclick = () => {
 	navbar.classList.toggle('active');
 	menu.classList.toggle('move');
-	bell.classList.remove('active');
+	cart.classList.remove('active');
 };
-
 
 // Notifications
-let bell = document.querySelector('.notification');
+let cart = document.querySelector('.notification');
 
-document.querySelector('#bell-icon').onclick = () => {
-	bell.classList.toggle('active');
-};
-// cart items added
-let cart = document.querySelector('.menu');
-
-document.querySelector('#cart-icon').onclick = () =>{
+document.querySelector('#cart-icon').onclick = () => {
 	cart.classList.toggle('active');
 };
+
+// cart items added
+// let cart = document.querySelector('.menu');
+
+// document.querySelector('#cart-icon').onclick = () =>{
+// 	cart.classList.toggle('active');
+// };
 
 // Swiper
 let swiper = new Swiper('.trending-content', {
