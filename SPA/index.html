@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+		<title>Functional Bugs - Gaming Store</title>
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
+		<!-- Swiper -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<!-- Box Icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Angular -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+	</head>
+
+	<body ng-app="FinalProject_app">
+		<header>
+			<!-- Nav -->
+			<div class="nav container">
+				<!-- Logo -->
+				<a href="#/!" class="logo">Functional<span>Bugs</span></a>
+				<!-- Nav Icons -->
+				<div class="nav-icons">
+					<a href="#!products"><i class="bx bx-grid-alt"></i></a>
+					<div class="menu-icon">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</div>
+				<!-- Menu -->
+				<div class="menu">
+					<img src="img/menu.png" alt="" />
+					<div class="navbar">
+						<li><a href="#/!">Home</a></li>
+						<li><a href="#!new-releases">New Releases</a></li>
+						<li><a href="#!contact">Contact Us</a></li>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main ng-view></main>
+
+		<!-- Copyright -->
+		<div class="copyright container">
+			<a href="#/!" class="logo">Functional<span>Bugs</span></a>
+			<p>&#169; Functional Bugs All Rights Reserved</p>
+		</div>
+	</body>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</html>

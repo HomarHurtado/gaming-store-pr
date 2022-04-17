@@ -1,0 +1,68 @@
+<section class="new container" id="new">
+	<div class="heading">
+		<i class="bx bx-game"></i>
+		<h2>Available Games</h2>
+	</div>
+	<!-- Content -->
+	<div class="new-content">
+		<div id="p_list" ng-repeat="product in products ">
+			<div class="box">
+				<img ng-src="{{product.p_image}}" />
+				<div class="box-text">
+					<h2>{{product.p_name}}</h2>
+					<h3>{{product.p_genre}}</h3>
+					<div class="rating-download">
+						<div class="rating">
+							<i class="bx bx-dollar-circle"></i>
+							<span>{{product.p_price}}</span>
+						</div>
+						<div>
+							<a href="./download.html" class="box-btn"
+								><i class="bx bx-download"></i
+							></a>
+							<a href="" class="box-btn"
+								><i class="bx bx-cart-add" ng-click="add_cart(product)"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="container">
+		<div class="heading">
+			<i class="bx bx-cart"></i>
+			<h2>Shopping Cart</h2>
+		</div>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="cart in carts" ng-init="setTotals(cart)">
+						<td>{{cart.p_name}}</td>
+						<td>${{cart.p_price}}</td>
+						<td>
+							<button type="button" ng-click="remove_cart(cart)">Remove</button>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>Total</td>
+						<td>${{total}}</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div class="big-button">
+			<a href="#!checkout">Checkout</a>
+		</div>
+	</section>
+</section>
