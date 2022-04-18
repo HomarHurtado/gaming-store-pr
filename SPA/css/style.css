@@ -14,11 +14,11 @@
 
 /* Variables */
 :root {
-	--main-color: #fa5353;
+	--main-color: #45a29e;
 	/* Second Color Choice */
 	/* --main-color: #0d81ec; */
-	--dark-color: #1b182b;
-	--light-color: #322f40;
+	--dark-color: #0b0c10;
+	--light-color: #1f2833;
 	--text-color: hsl(0, 0%, 91%);
 }
 
