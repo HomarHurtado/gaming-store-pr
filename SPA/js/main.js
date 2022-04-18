@@ -27,6 +27,10 @@ FinalProject_app.config(function ($routeProvider) {
 			templateUrl: './pages/checkout.html',
 			controller: 'checkout_ctrl',
 		})
+		.when('/contact', {
+			templateUrl: './pages/contact.html',
+			controller: 'contact_ctrl',
+		})
 		.otherwise({ templateUrl: './pages/404.html' });
 });
 
@@ -90,7 +94,7 @@ FinalProject_app.controller('products_ctrl', function ($scope) {
 		},
 		{
 			p_id: 4,
-			p_name: 'Marvel - Contest of Champions',
+			p_name: 'Marvel: Contest of Champions',
 			p_genre: 'Fighting',
 			p_image: 'img/new8.jpg',
 			p_price: 53,
